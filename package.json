@@ -25,6 +25,7 @@
   },
   "scripts": {
     "start": "node ./script/convert_lakemind_to_xmind.js",
+    "xmind2md": "node ./script/convert_xmind_to_markdown.js",
     "testToContent": "node ./test/test_to_content.js",
     "testToXmind": "node ./test/file_to_xmind.js",
     "LakeToJson": "node ./test/lake_to_json.js"

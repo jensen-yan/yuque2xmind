@@ -4,6 +4,7 @@
 
 - 基于 Node.js ，cheerio ，inquirer ，jszip ，xml2js ，等开发的文件转换工具
 - 可以将语雀思维导图 .lakeboard 格式文件转换为 XMind 思维导图
+- 可以将 XMind 思维导图转换为 Markdown 文件
 
 ## 注意事项
 
@@ -63,6 +64,19 @@ npm run start
 2. 选择该文件夹下需要转换的文件
 3. 转换成功后，文件会存放在项目目录的 result/output 目录下
 4. 使用 XMind 打开后就可以进行各种编辑了，或者导出为其他各种格式
+
+### XMind 转 Markdown
+
+```bash
+npm run xmind2md
+```
+
+1. 选择需要转换的文件夹（默认为 result/output 目录）
+2. 选择该文件夹下需要转换的 .xmind 文件
+3. 选择转换模式：
+   - **标题模式**：使用 `#` 标题层级表示思维导图结构
+   - **列表模式**：使用 `-` 缩进列表表示思维导图结构
+4. 转换成功后，Markdown 文件会存放在项目目录的 result/markdown 目录下
 
 - 设置镜像源
 

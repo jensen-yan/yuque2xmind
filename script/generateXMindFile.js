@@ -97,6 +97,10 @@ async function generateXMindFile(savePath) {
     // 生成 XMind 文件的压缩包数据
     const xmindData = await zip.generateAsync({ type: "nodebuffer" });
 
+    // 确保输出目录存在
+    const outputDir = path.dirname(xmindFilePath);
+    await fsPromises.mkdir(outputDir, { recursive: true });
+
     // 将压缩数据写入 XMind 文件
     await fsPromises.writeFile(xmindFilePath, xmindData);
 

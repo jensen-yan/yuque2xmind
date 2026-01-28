@@ -1,4 +1,4 @@
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 import he from "he";
 
 // 辅助函数：解析 style 属性
